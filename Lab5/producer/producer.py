@@ -39,6 +39,6 @@ for _, row in df.iterrows():
     producer.send('Topic1', data)
     producer.send('Topic2', data)
     print(f'[Producer] Sent: {data}')
-    time.sleep(0.1)  # Затримка для наочності
+    time.sleep(0.1)  # Затримка
 
 producer.flush()

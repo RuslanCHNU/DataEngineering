@@ -8,11 +8,11 @@ print('[Consumer2] Starting...')
 def setup_consumer():
     try:
         consumer = KafkaConsumer(
-            'Topic1',  # Для consumer2 змініть на 'Topic2'
+            'Topic2',  
             bootstrap_servers=['broker1:9092', 'broker2:9093'],
             value_deserializer=lambda v: json.loads(v.decode('utf-8')),
             auto_offset_reset='earliest',
-            group_id='group2'  # Для consumer2 вкажіть 'group2'
+            group_id='group2'  
         )
         return consumer
     except NoBrokersAvailable:
