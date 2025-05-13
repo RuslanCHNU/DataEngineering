@@ -1,0 +1,35 @@
+# Ігнорування CSV-файлу з даними (великий файл)
+data/Divvy_Trips_2019_Q4.csv
+
+# Віртуальні середовища Python
+venv/
+env/
+.venv/
+
+# Кеші Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи та тимчасові файли
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE-специфічні файли
+.vscode/
+.idea/
+*.iml
+
+# Файли середовища (змінні, паролі)
+.env
+.env.local
+.env.development
+.env.production
+
+# Артефакти Docker
+**/data/*.csv  # Дублювання на випадок, якщо інші CSV-файли додаються
+**/volumes/
+**/kafka-data/
+**/zookeeper-data/
