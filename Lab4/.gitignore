@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Spark / Ivy
+/.ivy2/
+/tmp/
+
+# IDE settings
+.idea/
+/.vscode/
+
+# Логи
+*.log
